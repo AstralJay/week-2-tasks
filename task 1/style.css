@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #1e1e2f;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.board {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.column {
+  flex: 1;
+  background: #2c2c3c;
+  border-radius: 8px;
+  padding: 10px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.column h2 {
+  text-align: center;
+  color: #ffd369;
+  margin-bottom: 10px;
+}
+
+.dropzone {
+  flex: 1;
+  padding: 10px;
+  background: #20202b;
+  border-radius: 6px;
+  min-height: 300px;
+}
+
+.card {
+  background: #393e46;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: grab;
+  user-select: none;
+}
+
+.card.dragging {
+  opacity: 0.5;
+  border: 2px dashed #ffd369;
+}
